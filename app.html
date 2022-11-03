@@ -1,0 +1,38 @@
+<transition name='fade'>
+
+  <router-view v-if='appLoaded && isLoginPage' />
+  <router-view v-else-if='appLoaded && isNotFoundPage' />
+  <div v-else-if='appLoaded' class='pb-2'>
+    <top-header />
+    
+    <div class='app-content content'>
+      <div class='header-navbar-shadow'></div>
+      <transition :name="$router.history.pending ? null : 'scale'" mode='out-in'>
+        <router-view />
+      </transition>
+    </div>
+    
+    <modal-note-form />
+    <modal-note-config />
+    <modal-import />
+    <toast-message />
+    <modal-confirm />
+    <error-load-route @reload='reloadRoute' />
+    <modal-rename-note />
+    <a href='#' @click='goToTop' class='to-top text-success' v-show='showGoToTop'>
+      <arrow-up-circle-icon />
+    </a>
+    <div v-show='loadingRouteComponent' class='blockOverlay'></div>
+    <div class='loader-route' v-show='loadingRouteComponent'>
+      <div class='loader-route--dot'></div><div class='loader-route--dot'></div>
+      <div class='loader-route--dot'></div><div class='loader-route--dot'></div>
+      <div class='loader-route--dot'></div><div class='loader-route--dot'></div>
+      <div class='loader-route--text'></div>
+    </div>
+    <locale-changer />
+
+    <!-- loader style 1 -->
+    <!-- <div v-show='loadingRouteComponent' class='loader-route'><div></div><div></div><div></div><div></div></div> -->
+  </div>
+
+</transition>

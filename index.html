@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>Quản lý Ghi chú</title>
+
+	<link rel='icon' type='image/x-icon' href='/assets/favicon.ico'>
+	<link rel='icon' type='image/png' href='/assets/favicon.png'>
+
+	<link type='text/css' rel='stylesheet' href='https://cdn.jsdelivr.net/combine/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.css'	/>
+	<link type='text/css' rel='stylesheet' href='/assets/styles.css' />
+</head>
+
+<body class='pace-done horizontal-layout horizontal-menu navbar-floating footer-static menu-expanded'>
+  
+  <div id='loader'>
+    <b-container fluid>
+      <transition name='fade'>
+        <div v-if='!completed' class='mt-20'>
+          <h1 class='text-center mt-2 display-6'>Quản lý Ghi chú</h1>
+          <b-progress :max='100' class='my-6'>
+            <b-progress-bar v-for='variant in Object.keys(variants)'
+              :variant='variant' :value='variants[variant].status' animated striped>
+            </b-progress-bar>
+          </b-progress>
+          <div class='col text-center fs-1 mt-1'>
+            {{ currentAction }}...
+          </div>
+          <img class='loader-img' src='/assets/loader.gif' />
+        </div>
+      </transition>
+    </b-container>
+  </div>
+
+  <div id='app'></div>
+  
+	<script src='https://cdn.jsdelivr.net/combine/npm/es6-promise@4.2.8,npm/vue@2.6.14,npm/vuex@3.6.2,npm/vue3-sfc-loader@0.8.4/dist/vue2-sfc-loader.js,npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js,npm/vue-router@3.5.3/dist/vue-router.min.js'>
+	</script>
+  <script src='https://cdn.jsdelivr.net/npm/vue-feather-icons@5.1.0/dist/vue-feather-icons.min.js'></script>
+	<script src='/loader.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+{
+  "app_name": "Notes Management",
+  "select_placeholder": "Select...",
+  "sort_desc": "Descending",
+  "sort_asc": "Ascending",
+  "per_page_many": "Show a lot",
+  "name": "Name",
+  "ok_title": "Agree",
+  "cancel_title": "Close",
+  "tag_name": "Tags",
+  "placeholder_search": "@:action.enter keyword",
+  "created_at": "Created at",
+  "session_timeout": "Your login session has expired, you need to login again.",
+  "updated_at": "Updated at",
+  "top-header": {
+    "logout": "Logout",
+    "admin_role": "Admin"
+  },
+  "action": {
+    "add": "Add",
+    "edit": "Edit",
+    "save": "Save",
+    "delete": "Delete",
+    "add_new": "Add new",
+    "search": "Search",
+    "import": "Import",
+    "export": "Export",
+    "refresh": "Refresh",
+    "enter": "Enter",
+    "confirm-delete": "Please confirm",
+    "loading_detail": "Loading information..."
+  },
+  "navigations": {
+    "home": "Home",
+    "notes": "Notes",
+    "tags": "@:tag_name",
+    "settings": "Settings"
+  },
+  "toast-message": {
+    "header": "Notice !",
+    "close": "@:cancel_title"
+  },
+  "home": {
+    "action": {
+      "add": "@:action.add",
+      "edit": "@:action.edit",
+      "delete": "@:action.delete",
+      "search": "@:action.search",
+      "import": "@:action.import (from similar system)"
+    },
+    "top_banner": {
+      "message1": "Welcome to the",
+      "message2": "@:app_name system"
+    },
+    "summary": {
+      "header": "Main function",
+      "export1": "@:action.export (ZIP & JSON)",
+      "export2": "@:action.export (JSON)",
+      "to_route": "Go to the management page"
+    }
+  },
+  "locale-changer": {
+    "title": "Change language",
+    "locale": {
+      "vi": "Vietnamese",
+      "en": "English"
+    }
+  },
+  "settings": {
+    "saved": "System configuration has been saved.",
+    "save": "@:action.save",
+    "reset": "Reset",
+    "main": {
+      "header": "Global config",
+      "endpoint": "Endpoint",
+      "placeholder_endpoint": "@:action.enter @.lower:settings.main.endpoint"
+    },
+    "notes_page": {
+      "header": "Config for @:app_name page",
+      "per_page": "Per page",
+      "sort_direction": "Direction",
+      "sort_by": "Sort"
+    }
+  },
+  "page-not-found": {
+    "header": "Not found",
+    "the_url_you_access_does_not_exists": "The url you visited does not exist.",
+    "go_home": "Go home"
+  },
+  "retry_readable": {
+    "hours": "hour(s)",
+    "minutes": "minute(s)",
+    "seconds": "second(s)",
+    "please_retry_after": "Please try again after {hours} @.lower:retry_readable.hours {minutes} @.lower:retry_readable.minutes {seconds} @.lower:retry_readable.seconds"
+  },
+  "login": {
+    "header_form": "Welcome !",
+    "message": "Please login to your account to start the adventure",
+    "form": {
+      "username": "Username",
+      "placeholder_username": "@:action.enter @.lower:login.form.username",
+      "password": "Password",
+      "placeholder_password": "@:action.enter @.lower:login.form.password",
+      "remember": "Remember Me",
+      "submit": "Log in"
+    },
+    "failed": {
+      "many_failed_message": "You have attempted to logging wrong too many times from this IP address",
+      "invalid": "Incorrect username or password."
+    }
+  },
+  "error": {
+    "default_text": "Something went wrong...",
+    "has_error": "Error",
+    "notice": "@:toast-message.header"
+  },
+  "loading": {
+    "text": "Loading..."
+  },
+  "error-load-route": {
+    "modal_header": "Oh, no, no",
+    "ok_title": "Retry",
+    "text": "An error occurred when loading this layout."
+  },
+  "validations": {
+    "messages": {
+      "!!! can use as format !!!": "{_rule_}, {_field_}, {length}",
+      "required": "Please enter a value.",
+      "required2": "Please select a value.",
+      "min": "Minimum length must be greater than or equal to {length}.",
+      "url": "Url is invalid."
+    }
+  },
+  "tags": {
+    "total": "Total",
+    "refresh": "@:action.refresh",
+    "no_tags": "No tags, please click @.lower:(action.add_new).",
+    "creating_new": "Creating new",
+    "modal_header": "@:action.confirm",
+    "filter_status": "Status",
+    "confirm_message": "Are you sure to delete the tag",
+    "ok_title": "@:ok_title",
+    "add_new": "@:action.add_new",
+    "not_saved": "Not save",
+    "import": "@:action.import",
+    "search": "@:action.search",
+    "export": "@:action.export",
+    "status_active": "Active",
+    "status_inactive": "Inactive",
+    "all": "All",
+    "clear_search": "Clear",
+    "deleted": "Tag with id: [{id}] has been deleted.",
+    "deleted_not_saved": "Tag [@.lower:tags.not_saved] has been deleted.",
+    "error_download": "An error occurred while downloading with the format [{type}] !",
+    "header": "List of tags"
+  },
+  "tag-item": {
+    "created": "Tag [{name}] has been created, id: [{id}].",
+    "saved": "Tag with id: [{id}] has been saved.",
+    "form": {
+      "name": "Tag",
+      "placeholder_name": "@:action.enter @.lower:tag-item.form.name",
+      "status": "Status",
+      "save": "@:action.save",
+      "delete": "@:action.delete",
+      "current": "Current",
+      "status_active": "Active",
+      "action": "Action"
+    }
+  },
+  "modal-note-form": {
+    "not_found": "Not found note with id: [{id}].",
+    "updated": "Note [{name}] has been updated.",
+    "created": "Note [{name}] has been created, id: [{id}].",
+    "ok_title": "@:action.save",
+    "modal_header_edit": "@:action.edit note",
+    "modal_header_add": "@:action.add note",
+    "form": {
+      "name": "@:name",
+      "placeholder_name": "@:action.enter @.lower:modal-note-form.form.name",
+      "content": "Content",
+      "placeholder_content": "@:action.enter @.lower:modal-note-form.form.content"
+    }
+  },
+  "note-item": {
+    "detail": "Detail",
+    "tags": "@:tag_name",
+    "no_tag": "No tags, click to edit",
+    "edit": "@:action.edit",
+    "rename": "Rename",
+    "delete": "@:action.delete",
+    "update_config": "Edit configuration"
+  },
+  "notes": {
+    "error_download": "An error occurred while downloading with the format [{type}] !",
+    "header": "List of notes",
+    "refresh": "@:action.refresh",
+    "edit": "@:action.edit",
+    "add_new": "@:action.add_new",
+    "import": "@:action.import",
+    "export": "@:action.export",
+    "tags": "@:tag_name",
+    "per_page": "Per page",
+    "sort_by": "Order",
+    "sort_direction": "Direction",
+    "total": "Total results",
+    "not_found_with_criteria": "No notes matching with the search criteria.",
+    "no_notes": "No notes !"
+  },
+  "modal-rename-note": {
+    "renamed": "Note [{old_name}] has been renamed to [{new_name}].",
+    "ok_title": "@:action.save",
+    "modal_header": "Rename note",
+    "form": {
+      "old_name": "Old name",
+      "new_name": "New name",
+      "placeholder_new_name": "@:action.enter @.lower:modal-rename-note.form.new_name"
+    }
+  },
+  "modal-note-config": {
+    "imported": "Config for [{name}] has been saved.",
+    "ok_title": "@:action.save",
+    "modal_header": "Config",
+    "form": {
+      "color": "Colors",
+      "whole_block": "Whole card",
+      "border_color": "Border color",
+      "background_color": "Backgound color",
+      "text_color": "Text color",
+      "header": "Title",
+      "content": "Content",
+      "tags": "@:tag_name"
+    }
+  },
+  "modal-import": {
+    "notes": "@:navigations.notes",
+    "tags": "@:tag_name",
+    "imported": "Imported ${message} ${header_name}.",
+    "ok_title": "Start",
+    "modal_header": "Import [{header_name}] from other website",
+    "form": {
+      "txt_url": "Website url",
+      "placeholder_txt_url": "@:action.enter @.lower:modal-import.form.txt_url",
+      "txt_auth_token": "Auth token",
+      "placeholder_txt_auth_token": "@:action.enter @.lower:modal-import.form.txt_auth_token"
+    }
+  },
+  "modal-confirm": {
+    "deleted": "Note with id: [{id}] has been deleted.",
+    "modal_header": "@:action.confirm",
+    "ok_title": "@:ok_title",
+    "confirm_message": "Are you sure you will delete note"
+  }
+}

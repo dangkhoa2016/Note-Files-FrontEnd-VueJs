@@ -1,0 +1,254 @@
+{
+  "app_name": "Quản lý Ghi chú",
+  "select_placeholder": "Chọn...",
+  "sort_desc": "Giảm dần",
+  "sort_asc": "Tăng dần",
+  "per_page_many": "Hiển thị thật nhiều",
+  "name": "Tên",
+  "ok_title": "Đồng ý",
+  "cancel_title": "Đóng",
+  "tag_name": "Nhãn",
+  "placeholder_search": "@:action.enter từ khóa",
+  "created_at": "Ngày tạo",
+  "session_timeout": "Phiên đăng nhập đã hết hạn, bạn cần phải đăng nhập lại.",
+  "updated_at": "Ngày sửa",
+  "top-header": {
+    "logout": "Đăng xuất",
+    "admin_role": "Quản trị viên"
+  },
+  "action": {
+    "add": "Thêm",
+    "edit": "Sửa",
+    "save": "Lưu",
+    "delete": "Xóa",
+    "add_new": "Thêm mới",
+    "search": "Tìm kiếm",
+    "import": "Nhập dữ liệu",
+    "export": "Xuất dữ liệu",
+    "refresh": "Làm mới",
+    "enter": "Nhập",
+    "confirm": "Vui lòng xác nhận",
+    "loading_detail": "đang lấy thông tin..."
+  },
+  "navigations": {
+    "home": "Trang chính",
+    "notes": "Ghi chú",
+    "tags": "@:tag_name",
+    "settings": "Cấu hình"
+  },
+  "toast-message": {
+    "header": "Thông báo !",
+    "close": "@:cancel_title"
+  },
+  "home": {
+    "action": {
+      "add": "@:action.add",
+      "edit": "@:action.edit",
+      "delete": "@:action.delete",
+      "search": "@:action.search",
+      "import": "@:action.import (từ hệ thống tương tự)"
+    },
+    "top_banner": {
+      "message1": "Chào mừng bạn đến với hệ thống",
+      "message2": "@:app_name"
+    },
+    "summary": {
+      "header": "Các tính năng chính",
+      "export1": "@:action.export (ZIP & JSON)",
+      "export2": "@:action.export (JSON)",
+      "to_route": "Đến trang quản lý"
+    }
+  },
+  "locale-changer": {
+    "title": "Thay đổi ngôn ngữ",
+    "locale": {
+      "vi": "Tiếng Việt",
+      "en": "Tiếng Anh"
+    }
+  },
+  "settings": {
+    "saved": "Đã lưu cấu hình hệ thống.",
+    "save": "@:action.save",
+    "reset": "Đặt lại",
+    "main": {
+      "header": "Cấu hình chung",
+      "endpoint": "Máy chủ nguồn",
+      "placeholder_endpoint": "@:action.enter @.lower:settings.main.endpoint"
+    },
+    "notes_page": {
+      "header": "Cấu hình trang @:app_name",
+      "per_page": "Số ghi chú trên 1 trang",
+      "sort_direction": "Hướng",
+      "sort_by": "Sắp xếp"
+    }
+  },
+  "page-not-found": {
+    "header": "Không tìm thấy",
+    "the_url_you_access_does_not_exists": "Trang mà bạn truy cập không tồn tại.",
+    "go_home": "Về trang chủ"
+  },
+  "retry_readable": {
+    "hours": "giờ",
+    "minutes": "phút",
+    "seconds": "giây",
+    "please_retry_after": "Vui lòng thử lại sau {hours} @.lower:retry_readable.hours {minutes} @.lower:retry_readable.minutes {seconds} @.lower:retry_readable.seconds"
+  },
+  "login": {
+    "header_form": "Chào mừng !",
+    "message": "Vui lòng đăng nhập vào tài khoản của bạn để bắt đầu cuộc phiêu lưu",
+    "form": {
+      "username": "Tên đăng nhập",
+      "placeholder_username": "@:action.enter @.lower:login.form.username",
+      "password": "Mật khẩu",
+      "placeholder_password": "@:action.enter @.lower:login.form.password",
+      "remember": "Ghi nhớ",
+      "submit": "Đăng nhập"
+    },
+    "failed": {
+      "many_failed_message": "Bạn đã đăng nhập sai quá nhiều lần từ địa chỉ IP này",
+      "invalid": "Tên người dùng hoặc mật khẩu không đúng."
+    }
+  },
+  "error": {
+    "default_text": "Xảy ra sự cố...",
+    "has_error": "Có lỗi",
+    "notice": "@:toast-message.header"
+  },
+  "loading": {
+    "text": "Đang tải..."
+  },
+  "error-load-route": {
+    "modal_header": "Oh, không, không",
+    "ok_title": "Thử lại",
+    "text": "Xảy ra lỗi trong quá trình tải lớp giao diện này."
+  },
+  "validations": {
+    "messages": {
+      "!!! can use as format !!!": "{_rule_}, {_field_}, {length}",
+      "required": "Vui lòng nhập giá trị.",
+      "required2": "Vui lòng chọn giá trị.",
+      "min": "Chiều dài tối thiểu phải lớn hơn hoặc bằng {length}.",
+      "url": "Đường dẫn liên kết không đúng định dạng."
+    }
+  },
+  "tags": {
+    "total": "Tổng cộng",
+    "refresh": "@:action.refresh",
+    "no_tags": "Chưa có dữ liệu, vui lòng click @.lower:(action.add_new).",
+    "creating_new": "Đang tạo mới",
+    "modal_header": "@:action.confirm",
+    "filter_status": "Trạng thái",
+    "confirm_message": "Bạn có chắc chắn sẽ xoá nhãn",
+    "ok_title": "@:ok_title",
+    "add_new": "@:action.add_new",
+    "not_saved": "Chưa lưu",
+    "import": "@:action.import",
+    "search": "@:action.search",
+    "export": "@:action.export",
+    "status_active": "Kích hoạt",
+    "status_inactive": "Không kích hoạt",
+    "all": "Tất cả",
+    "clear_search": "Xóa",
+    "deleted": "Nhãn với id: [{id}] đã bị xóa.",
+    "deleted_not_saved": "Nhãn [@.lower:tags.not_saved] đã bị xóa.",
+    "error_download": "Có lỗi xảy ra trong quá trình tải với định dạng [{type}] !",
+    "header": "Danh sách nhãn"
+  },
+  "tag-item": {
+    "created": "Nhãn [{name}] đã được tạo, id: [{id}].",
+    "saved": "Đã lưu nhãn với id: [{id}].",
+    "form": {
+      "name": "Nhãn",
+      "placeholder_name": "@:action.enter @.lower:tag-item.form.name",
+      "status": "Trạng thái",
+      "save": "@:action.save",
+      "delete": "@:action.delete",
+      "current": "Hiện tại",
+      "status_active": "Kích hoạt",
+      "action": "Hành động"
+    }
+  },
+  "modal-note-form": {
+    "not_found": "Ghi chú với id: [{id}] không tìm thấy.",
+    "updated": "Ghi chú [{name}] đã được cập nhật.",
+    "created": "Ghi chú [{name}] đã được tạo, id: [{id}].",
+    "ok_title": "@:action.save",
+    "modal_header_edit": "@:action.edit ghi chú",
+    "modal_header_add": "@:action.add ghi chú",
+    "form": {
+      "name": "@:name",
+      "placeholder_name": "@:action.enter @.lower:modal-note-form.form.name",
+      "content": "Nội dung",
+      "placeholder_content": "@:action.enter @.lower:modal-note-form.form.content"
+    }
+  },
+  "note-item": {
+    "detail": "Chi tiết",
+    "tags": "@:tag_name",
+    "no_tag": "Chưa có, click để chỉnh sửa",
+    "edit": "@:action.edit",
+    "rename": "Đổi tên",
+    "delete": "@:action.delete",
+    "update_config": "Chỉnh sửa cấu hình"
+  },
+  "notes": {
+    "error_download": "Có lỗi xảy ra trong quá trình tải với định dạng [{type}] !",
+    "header": "Danh sách ghi chú",
+    "refresh": "@:action.refresh",
+    "edit": "@:action.edit",
+    "add_new": "@:action.add_new",
+    "import": "@:action.import",
+    "export": "@:action.export",
+    "tags": "@:tag_name",
+    "per_page": "Trên 1 trang",
+    "sort_by": "Sắp xếp",
+    "sort_direction": "Hướng",
+    "total": "Tổng kết quả",
+    "not_found_with_criteria": "Không tìm thấy ghi chú phù hợp với tiêu chí tìm kiếm.",
+    "no_notes": "Chưa có ghi chú !"
+  },
+  "modal-rename-note": {
+    "renamed": "Ghi chú [{old_name}] đã được đổi tên thành [{new_name}].",
+    "ok_title": "@:action.save",
+    "modal_header": "Đổi tên ghi chú",
+    "form": {
+      "old_name": "Tên cũ",
+      "new_name": "Tên mới",
+      "placeholder_new_name": "@:action.enter @.lower:modal-rename-note.form.new_name"
+    }
+  },
+  "modal-note-config": {
+    "imported": "Cấu hình của ghi chú [{name}] đã được cập nhật.",
+    "ok_title": "@:action.save",
+    "modal_header": "Cấu hình",
+    "form": {
+      "color": "Màu sắc",
+      "whole_block": "Nguyên cả khối",
+      "border_color": "Màu viền",
+      "background_color": "Màu nền",
+      "text_color": "Màu chữ",
+      "header": "Tiêu đề",
+      "content": "Nội dung",
+      "tags": "@:tag_name"
+    }
+  },
+  "modal-import": {
+    "notes": "@:navigations.notes",
+    "tags": "@:tag_name",
+    "imported": "Đã nhập dữ liệu của ${message} ${header_name}.",
+    "ok_title": "Bắt đầu",
+    "modal_header": "Nhập dữ liệu [{header_name}] từ website khác",
+    "form": {
+      "txt_url": "Đường dẫn liên kết Website",
+      "placeholder_txt_url": "@:action.enter @.lower:modal-import.form.txt_url",
+      "txt_auth_token": "Mã truy cập",
+      "placeholder_txt_auth_token": "@:action.enter @.lower:modal-import.form.txt_auth_token"
+    }
+  },
+  "modal-confirm": {
+    "deleted": "Ghi chú với id: [{id}] đã bị xóa.",
+    "modal_header": "@:action.confirm",
+    "ok_title": "@:ok_title",
+    "confirm_message": "Bạn có chắc chắn sẽ xoá ghi chú"
+  }
+}
